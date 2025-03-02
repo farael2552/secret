@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Invitation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #ffb6c1, #ffd1dc);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px; /* Added padding for better spacing on mobile */
+            overflow-x: hidden; /* Allow vertical scroll but hide horizontal overflow */
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            max-width: 90%;
+            width: 500px;
+            margin-bottom: 50px; /* Added space for scrolling */
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: #ff4d6d;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow buttons to wrap for smaller screens */
+        }
+
+        .button {
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            background: linear-gradient(45deg, #ff69b4, #ff8da1);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 10px; /* Space for button wrapping on mobile */
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 105, 180, 0.6);
+        }
+
+        .no-button {
+            background: linear-gradient(45deg, #333, #555);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .no-button:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Hey there! I know this might be a little confusing since I'm just a random person walking up to you, but I couldn't help myself.</p>
+        <p>I bought something from this store last week and just had to come over to see you again. I've been preparing for this little surprise all week, gathering the courage to introduce myself.</p>
+        <p>I just can't get enough of seeing you—so can we hang out soon?</p>
+        <div class="buttons">
+            <a href="reply.html" class="button">Yes 😊</a>
+            <a href="no.html" class="button no-button">No 😔</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Message</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ffd1ff, #ffc8dd);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px; /* Added padding for better spacing on mobile */
+            overflow-x: hidden; /* Allow vertical scroll but hide horizontal overflow */
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            max-width: 90%;
+            width: 500px;
+            margin-bottom: 50px; /* Added space for scrolling */
+        }
+
+        .message {
+            position: relative;
+            padding: 2rem;
+            border: 2px solid #ff69b4;
+            border-radius: 15px;
+            margin: 2rem 0;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: #ff4d6d;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin: 1rem 0;
+        }
+
+        .button {
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            background: linear-gradient(45deg, #ff69b4, #ff8da1);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 2rem;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 105, 180, 0.6);
+        }
+
+        .emoji {
+            font-size: 2rem;
+            margin: 0 5px;
+            display: inline-block;
+            animation: float 2s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hey... <span class="emoji">😊</span></h1>
+        <div class="message">
+            <p>Hi, my name is <strong>Rafael Ramos</strong>.</p>
+            <p>I'm <strong>22 years old</strong>.</p>
+            <p>Right now, my heart is beating fast because I'm so nervous <span class="emoji">💓</span></p>
+            <p>But please continue, and I hope you'll appreciate this little effort <span class="emoji">💝</span></p>
+        </div>
+        <a href="invitation.html" class="button">Continue <span class="emoji">→</span></a>
+    </div>
+</body>
+
+</html>
